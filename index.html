@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEU SERVIDOR • Roleplay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="navbar">
+  <a href="#inicio" class="brand">
+    <div class="brand-mark">R</div>
+    <div><strong data-server-name>MEU SERVIDOR</strong><span data-server-subtitle>Roleplay</span></div>
+  </a>
+  <nav id="navLinks">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#loja">Loja</a>
+    <a href="#como-jogar">Como jogar</a>
+    <a data-discord class="discord-btn" href="#" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
+  </nav>
+  <button id="mobileMenu" class="mobile-menu"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <span class="eyebrow"><span class="online-dot"></span> SERVIDOR ROLEPLAY</span>
+      <h1>CONSTRUA<br><span>UMA NOVA</span><em> Vida.</em></h1>
+      <p>Entre em uma cidade feita para histórias, amizades e experiências únicas. Escolha seu caminho e viva seu personagem.</p>
+      <div class="actions">
+        <a class="btn primary" data-play href="#"><i class="fa-solid fa-play"></i> JOGAR AGORA</a>
+        <a class="btn ghost" data-discord href="#" target="_blank"><i class="fa-brands fa-discord"></i> ENTRAR NO DISCORD</a>
+      </div>
+      <div class="stats">
+        <div><strong>24/7</strong><span>Servidor online</span></div>
+        <div><strong data-slots>500</strong><span>Slots</span></div>
+        <div><strong data-platform>MTA</strong><span>Plataforma</span></div>
+      </div>
+    </div>
+
+    <aside class="server-card">
+      <span class="status"><span></span> ONLINE</span>
+      <div class="server-logo">RP</div>
+      <h2 data-server-name>MEU SERVIDOR</h2>
+      <p data-server-subtitle>Roleplay</p>
+      <div class="server-info">
+        <div><small>Modo</small><strong>Roleplay</strong></div>
+        <div><small>Plataforma</small><strong data-platform>MTA</strong></div>
+      </div>
+      <a data-play href="#" class="connect">CONECTAR AO SERVIDOR <i class="fa-solid fa-arrow-right"></i></a>
+    </aside>
+  </section>
+
+  <section class="section" id="sobre">
+    <div class="heading">
+      <span>CONHEÇA A CIDADE</span>
+      <h2>Seu personagem. <em>Sua história.</em></h2>
+      <p>Um servidor pensado para quem quer viver um roleplay organizado, divertido e imersivo.</p>
+    </div>
+    <div class="cards">
+      <article><i class="fa-solid fa-briefcase"></i><h3>Empregos</h3><p>Construa sua carreira e evolua seu personagem.</p></article>
+      <article><i class="fa-solid fa-car-side"></i><h3>Veículos</h3><p>Tenha sua garagem e explore toda a cidade.</p></article>
+      <article><i class="fa-solid fa-house"></i><h3>Propriedades</h3><p>Conquiste sua casa e construa sua vida.</p></article>
+    </div>
+  </section>
+
+  <section class="section" id="loja">
+    <div class="heading">
+      <span>LOJA</span>
+      <h2>Itens <em>exclusivos</em></h2>
+      <p>Exemplos de produtos que você pode editar.</p>
+    </div>
+    <div class="products">
+      <article><span>POPULAR</span><i class="fa-solid fa-gem"></i><h3>VIP Bronze</h3><p>Benefícios básicos.</p><strong>R$ 19,90</strong><button onclick="comprar('VIP Bronze')">COMPRAR</button></article>
+      <article class="highlight"><span>RECOMENDADO</span><i class="fa-solid fa-crown"></i><h3>VIP Ouro</h3><p>Mais vantagens e benefícios.</p><strong>R$ 39,90</strong><button onclick="comprar('VIP Ouro')">COMPRAR</button></article>
+      <article><span>EXCLUSIVO</span><i class="fa-solid fa-star"></i><h3>VIP Diamante</h3><p>Pacote premium.</p><strong>R$ 59,90</strong><button onclick="comprar('VIP Diamante')">COMPRAR</button></article>
+    </div>
+  </section>
+
+  <section class="section" id="como-jogar">
+    <div class="heading"><span>COMO JOGAR</span><h2>Entre em <em>3 passos</em></h2></div>
+    <div class="steps">
+      <div><b>01</b><section><h3>Entre no Discord</h3><p>Leia as regras e acompanhe as novidades.</p></section></div>
+      <div><b>02</b><section><h3>Prepare seu jogo</h3><p>Instale a plataforma necessária.</p></section></div>
+      <div><b>03</b><section><h3>Conecte e jogue</h3><p>Crie seu personagem e comece sua história.</p></section></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div><span>FAÇA PARTE DA COMUNIDADE</span><h2>Pronto para começar?</h2><p>Entre no Discord e venha construir sua história.</p></div>
+    <a class="btn discord" data-discord href="#" target="_blank"><i class="fa-brands fa-discord"></i> ENTRAR NO DISCORD</a>
+  </section>
+</main>
+
+<footer>
+  <div class="brand footer-brand"><div class="brand-mark">R</div><div><strong data-server-name>MEU SERVIDOR</strong><span data-server-subtitle>Roleplay</span></div></div>
+  <p>© <span id="year"></span> <span data-server-name>MEU SERVIDOR</span>. Todos os direitos reservados.</p>
+</footer>
+
+<div id="toast" class="toast"><i class="fa-solid fa-circle-check"></i><span id="toastText"></span></div>
+<script src="scripts/main.js"></script>
+</body>
+</html>
